@@ -82,19 +82,17 @@ ul>li>a:hover{
 }
 
 #motto{
-    /* font-size: 40px;
-    color: white; */
-    /* border: 2px solid black; */
-    /* max-width: 940px; */
-    /* text-align: center;
+    font-size: 40px;
+    color: white; 
+    border: 2px solid black;
+    max-width: 940px;
+    text-align: center;
     margin-left: 69rem;
-    margin-right: 56rem; */
-    
-
+    margin-right: 56rem;
 }
 
 #motto>button{
-    /* color: white; */
+    color: white;
     padding: 15px 32px;
     border-radius: 20px;
 }
@@ -211,7 +209,7 @@ ul>li>img{
 }
 
 .sub{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 22px;
     margin: 20px;
     /* border-radius: 5%; */
@@ -241,7 +239,7 @@ ul>li>img{
 .pricingall{
     text-align: center;
     font-size: 28px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 40px;
 }
 
@@ -263,3 +261,46 @@ ul>li>img{
     border: 2px solid #23a6f0;
     table-layout: auto;
 }
+
+.branch-image{
+    background-color: rgba(37,43,66,255);
+    font-size: 6rem;
+    /* width: 100%; */
+    /* height: 60%; */
+    display: flex;
+}
+
+.branches{
+    /* max-width: 400px; */
+}
+
+.branches>h5{
+    font-size: 5rem;
+}
+
+.branches>p{
+font-size: 3rem;
+}
+
+.image{
+    float: right;
+    background-color: rgba(37,43,66,255);
+}
+
+#overlay{
+    /* background-color: rgba(37,43,66,255); */
+    /* border: 2px solid black; */
+
+}
+
+.appointment{
+    display: flex;
+    justify-content: center;
+}
+
+#bookapp{
+    float: right;
+    font-size: 35px;
+    /* margin: 30px; */
+}
+

@@ -82,13 +82,15 @@ ul>li>a:hover{
 }
 
 #motto{
-    font-size: 40px;
-    color: white;
+    /* font-size: 40px;
+    color: white; */
     /* border: 2px solid black; */
     /* max-width: 940px; */
-    text-align: center;
+    /* text-align: center;
     margin-left: 69rem;
-    margin-right: 56rem;
+    margin-right: 56rem; */
+    
+
 }
 
 #motto>button{
@@ -186,7 +188,7 @@ ul>li>a:hover{
 
 .users{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: center;
     gap: 90px;
     text-align: center;
     
@@ -234,4 +236,30 @@ ul>li>img{
    
     background-color: #23a6f0;
     padding: 15px 32px;
+}
+
+.pricingall{
+    text-align: center;
+    font-size: 28px;
+    border: 2px solid black;
+    margin: 40px;
+}
+
+#pricing{
+    justify-content: center;
+    display: flex;
+    gap: 1px;
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+}
+
+#pricing>h4 {
+    font-weight: 900;
+    font-size: 8vw;
+}
+
+#free, #standard, #premium{
+    border: 2px solid #23a6f0;
+    table-layout: auto;
 }

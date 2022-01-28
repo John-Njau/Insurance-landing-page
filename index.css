@@ -59,10 +59,12 @@ ul>li>a:hover{
     font-weight: 900;
     color: white;
     font-size: 30px;
+    background-color: transparent;
+    border: none;
 }
 
 #start>button:hover{
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     inset: 0 0 1px rgba(255, 255, 255, 0.6);
     background:  #23A6F0;
     color: white;
@@ -70,26 +72,23 @@ ul>li>a:hover{
 
 .slogan{
     font-size: 8vh;
-    /* margin-left: 49rem; */
-    max-width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-left: 69rem;
     margin-right: 56rem;
-    margin-top: 310px;
+    margin-top: 250px;
     padding: 130px;
     font-weight: 900;
     color: white;
-    max-height: 400px;
 }
 
 #motto{
     font-size: 40px;
     color: white;
-    border: 2px solid black;
-    max-width: 940px;
+    /* border: 2px solid black; */
+    /* max-width: 940px; */
     text-align: center;
-    margin-left: 9rem;
-    padding: auto;
+    margin-left: 69rem;
+    margin-right: 56rem;
 }
 
 #motto>button{
@@ -103,9 +102,53 @@ ul>li>a:hover{
     background:  #23A6F0;
 }
 
-button{
+#motto>button{
     font-size: 2rem;
     font-weight: 700;
     background-color: transparent;
     color: #fff;
+    border: 1px solid grey;
+}
+
+.contain{
+    display: flex;
+    flex-direction: row;
+    /* flex-basis: auto; */
+    flex-wrap: wrap;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 160px;
+}
+
+#peace, #set, #satisfaction{
+    /* border: 2px solid black; */
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    /* gap: 10px; */
+}
+
+.service>#set:hover{
+    color: white;
+    background:  #23A6F0;
+    color: white;
+}
+
+.service>#peace:hover{
+    color: white;
+    background:  #23A6F0;
+    color: white;
+}
+
+.service>#satisfaction:hover{
+    color: white;
+    background:  #23A6F0;
+    color: white;
 }

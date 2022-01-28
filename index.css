@@ -160,6 +160,7 @@ ul>li>a:hover{
     justify-content: center;
     /* justify-content: space-between; */
     gap: 160px;
+    border: 2px solid black;
 }
 
 #peace2, #set2, #satisfaction2{
@@ -171,4 +172,34 @@ ul>li>a:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     /* gap: 10px; */
+}
+
+.industry>h3{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.industry>p{
+    text-align: center;
+    font-size: 22px;
+}
+
+.users{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 90px;
+    text-align: center;
+    
+}
+
+.users>p{
+    font-size: 22px;
+}
+
+#user1, #user2, #user3{
+    border: 1px solid gray;
+    box-shadow: gray;
+    /* justify-content: space-evenly; */
+    /* gap: 2px; */
+    padding: auto;
 }

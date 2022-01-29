@@ -5,17 +5,36 @@
     /* font-size: 22px; */
 }
 
+@media screen and (max-width: 480px) {
+    /* This means that the changes will be affected on the body of the screen if and only 
+    if the width does not exceed 480px */
+    body {
+      background-color: lightgreen;
+    }
+  }
+
 .displaypage{
     background-image: url("https://i.postimg.cc/9MQ2p89Y/hero-cover-3.png");
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    background-attachment: fixed;
-    position: absolute;
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    position: relative;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; 
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* height: 900px; */
+    /* margin: 0 auto; */
+    /* border: 2px solid black; */
+}
+
+@media screen and (max-width:480px){
+    .displaypage{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: local;
+    }
+    
 }
 
 #name{
@@ -74,10 +93,8 @@ ul>li>a:hover{
 .slogan{
     font-size: 8vh;
     /* border: 2px solid black; */
-    margin-left: 69rem;
-    margin-right: 56rem;
-    margin-top: 250px;
-    padding: 130px;
+    /* margin-top: 250px; */
+    /* padding: 130px; */
     font-weight: 900;
     color: white;
 }
@@ -85,11 +102,11 @@ ul>li>a:hover{
 #motto{
     font-size: 40px;
     color: white; 
-    border: 2px solid black;
-    max-width: 940px;
+    /* border: 2px solid black; */
+    /* max-width: 940px; */
     text-align: center;
-    margin-left: 69rem;
-    margin-right: 56rem;
+    /* margin-left: 69rem; */
+    /* margin-right: 56rem; */
 }
 
 #motto>button{
@@ -112,19 +129,23 @@ ul>li>a:hover{
 }
 
 .contain{
-    display: flex;
+    text-align: center;
+    margin-top: 140px;
+    /* display: flex; */
     /* flex-direction: row; */
     /* flex-basis: auto; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* max-height: 700px; */
-    grid-column: auto;
+    /* grid-row: auto; */
+    /* margin: 0 auto; */
 }
 
 .service{
     display: flex;
     justify-content: center;
     /* justify-content: space-between; */
-    gap: 160px;
+    /* gap: 160px; */
+    /* margin-top: 1000px; */
 }
 
 #peace, #set, #satisfaction{
@@ -195,13 +216,16 @@ ul>li>a:hover{
     border: 2px solid black;
 }
 
-/* @media screen and(min-width:500px){
-    #user1, #user2, #user3{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* float: unset; */
-    /* } */
-/* }  */
+@media screen and(max-width:500px){
+    .users{
+        display: flex; 
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        gap: 50px;
+        flex-wrap: wrap;
+   }
+ }
 
 .checked {
     color: orange;
@@ -262,6 +286,13 @@ ul>li>a:hover{
     font-size: 28px;
 }
 
+price{
+    color: #23a6f0;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+
 #pricing>h4 {
     font-weight: 900;
     font-size: 8vw;
@@ -269,7 +300,9 @@ ul>li>a:hover{
 
 #free, #standard, #premium{
     border: 2px solid #23a6f0;
-    table-layout: auto;
+    /* table-layout: auto; */
+    margin: auto;
+    padding: auto;
 }
 
 .branch-image{
@@ -289,7 +322,7 @@ ul>li>a:hover{
 }
 
 .branches>p{
-font-size: 3rem;
+font-size: 2rem;
 }
 
 .image{
@@ -300,17 +333,27 @@ font-size: 3rem;
 .appointment{
     display: flex;
     justify-content: center;
+    /* flex-direction: row; */
 }
 
 #bookapp{
     float: right;
     font-size: 35px;
-    /* margin: 30px; */
+    margin: 0px;
+    gap: 0px;
+    /* text-align: center; */
 }
 
 .consult{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     font-size: 24px;
+    background-color: #fafafa;
+}
+
+#consultbtn{
+    margin-top: 20px;
+    /* padding: auto; */
 }
 
 .info{
@@ -321,8 +364,7 @@ font-size: 3rem;
 }
 
 .foot{
-    font-size: 22px;
-    margin: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
 }

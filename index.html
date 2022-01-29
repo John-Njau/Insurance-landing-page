@@ -7,56 +7,60 @@
     <title>Chester Insurance</title>
     <link rel="shortcut icon" href="./Assets/insurance-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div class="displaypage">
+    <div class="all-container">
         <div id="nav">
             <div id="name">
                 Chester Insurance
             </div>
-                <nav>
-                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            <div id="start">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="topright-btns">
                 <button>Login</button>
-                <button>Become a member</li>
+                <button>Become a member</button>
             </div>
         </div>
+
         <div class="contain">
             <div class="slogan"> 
                 <p>We Ensure The Best <br>
                     Insurance Service</p>
             </div>
+
             <div id="motto">
                 <p>We know how large objects will act, but things on a
                 small scale just do not act that way</p>
                 <button>Get Quote Now</button> <button>Learn More</button>
             </div>   
-        </div>     
-    </div>
-
-    <div class="service">
-        <div id="peace">
-            <img src="./Assets/pple-removedbg.png" alt="people icon" height="70px">
-                <h4>Peace of mind</h4>
-                    <p>the quick fox jumps over the lazy dog</p>
         </div>
-        <div id="set">
-            <img src="./Assets/pple-removedbg.png" alt="people icon" height="70px">
-                <h4>Set For Life</h4>
-                    <p>the quick fox jumps over the lazy dog</p>
-        </div>
-        <div id="satisfaction">
-            <img src="./Assets/pple-removedbg.png" alt="people icon"height="70px">
-                <h4>100% Satisfaction</h4>
-                    <p>the quick fox jumps over the lazy dog</p>
+             
+        <div class="service">
+            <div id="peace">
+                <img src="./Assets/pple-removedbg.png" alt="people icon" height="70px">
+                    <h4>Peace of mind</h4>
+                        <p>the quick fox jumps over the lazy dog</p>
+            </div>
+            <div id="set">
+                <img src="./Assets/pple-removedbg.png" alt="people icon" height="70px">
+                    <h4>Set For Life</h4>
+                        <p>the quick fox jumps over the lazy dog</p>
+            </div>
+            <div id="satisfaction">
+                <img src="./Assets/pple-removedbg.png" alt="people icon"height="70px">
+                    <h4>100% Satisfaction</h4>
+                        <p>the quick fox jumps over the lazy dog</p>
+            </div>
         </div>
     </div>
 
@@ -126,12 +130,6 @@
         </ul>
     </div>
 
-    <div class="sub">
-        <p>Subscribe For The Latest Newsletter
-            <input type="text" placeholder="Your Email">
-                <div id="btn">Subscribe</div></p>
-    </div>
-    
     <div class="pricingall">
         <h3>Pricing</h3>
             <p>Problems trying to resolve the conflict between the two major realms of classical physics. Newtonian mechanics</p>
@@ -148,7 +146,7 @@
                     <li> <img src="./Assets/checked_pngwing.com.png"> Unlimited product updates</li>
                     <li> <img src="./Assets/check_tick.png"> 1GB Cloud storage</li>
                     <li></li> <img src="./Assets/check_tick.png">Email and community support</li><br>
-                    <button>Try for free</button>
+                    <div id="price-btn"><button>Try for free</button></div> 
                 </div>
         </div>
         <div id="standard">
@@ -161,7 +159,7 @@
                 <li> <img src="./Assets/checked_pngwing.com.png"> Unlimited product updates</li>
                 <li> <img src="./Assets/check_tick.png"> 1GB Cloud storage</li>
                 <li></li> <img src="./Assets/check_tick.png">Email and community support</li><br>
-                <button>Try for free</button>
+                <div id="price-btn"><button>Try for free</button></div> 
             </div>
         </div>
         <div id="premium">
@@ -174,8 +172,7 @@
                 <li> <img src="./Assets/checked_pngwing.com.png"> Unlimited product updates</li>
                 <li> <img src="./Assets/check_tick.png"> 1GB Cloud storage</li>
                 <li></li> <img src="./Assets/check_tick.png">Email and community support</li><br>
-                <button>Try for free</button>
-            </div>
+                <div id="price-btn"><button>Try for free</button></div> 
             </div>
         </div>
     </div>
@@ -196,6 +193,7 @@
                 <img src="https://i.postimg.cc/5ymD51Cf/contact-cover-2.png" alt="Contact cover photo">
             </div>
             <div id="bookapp">
+                <div id="bk">
                 <h5>Book apppointment</h5>
                 <p>Name *</p>
                 <input type="text" placeholder="Full Name *">
@@ -205,7 +203,8 @@
                 <input type="text" placeholder="Please Select" >
                 <p>Time</p>
                 <input type="text" placeholder="4:00 Available">
-                <p><button>Book Appointment</button></p>
+                </div>
+                <div id="bkbtn"><button>Book Appointment</button></div>
             </div>
         </div>
     </div>
@@ -253,11 +252,11 @@
             <li><img src="./Assets/mail-icon.png" alt="mail image" height="42px"> debra.holt@example.com</li> </div>
         </div>
     </div>
-<footer>
-    <div class="foot">
-    <p>Copyright (c) 2022. <div id="dsgn">Designed by John Njau</dsgn></p>
-</div>
-</footer>
 
+    <footer>
+        <div class="foot">
+        <p>Copyright (c) 2022. <div id="dsgn">Designed by John Njau</dsgn></p>
+    </div>
+    </footer>
 </body>
 </html>

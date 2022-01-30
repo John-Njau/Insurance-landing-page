@@ -1,13 +1,79 @@
 @media screen and (max-width: 560px) {
     /* This means that the changes will be affected on the body of the screen if and only 
     if the width does not exceed 56px */
-    body {
-      /* background-color: lightgreen; */
-      position: relative;
-    }
-
     .vectors{
         display: flex;
         flex-direction: column;
     }
   }
+
+  @media screen and (max-width:560px){
+  ul, li{
+    justify-content: space-evenly;
+    list-style-type: none;
+    /* margin: 10px; */
+    /* gap: 40px; */
+    /* background-color: gray; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+#name{
+  padding: auto;
+  text-align: center;
+}
+
+#nav{
+  background-color:gray;
+  padding: 15px 32px;
+}
+
+/* .all-container{ */
+  /* background-image: url("https://i.postimg.cc/9MQ2p89Y/hero-cover-3.png"); */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+/* } */
+
+}
+
+@media screen and (max-width:560px){
+  .all-container>.service{
+      /* background-size: cover; */
+      /* background-repeat: no-repeat; */
+      /* background-attachment: fixed; */
+      display: flex;
+      flex-direction: column;
+      font-size: 3vw;
+      text-align: center;
+  }
+
+  .all-container{
+    /* object-fit: contain; */
+    /* height: 100vh; */
+  }
+  }
+
+  .contain >p{
+      text-align: center;
+      font-size: 3vw;
+  }
+
+@media screen and (max-width:560px){
+  .industry .users{
+      /* background-size: cover; */
+      /* background-repeat: no-repeat; */
+      /* background-attachment: fixed; */
+      /* display: flex; */
+      flex-direction: column;
+      font-size: 3vw;
+      border: none;
+      /* padding: 1rem; */
+      justify-content: space-evenly;
+      /* text-align: center; */
+      
+  }
+  #user1, #user2, #user3{
+      margin: 20px;
+      max-width: 100%;
+      height: auto;
+  }
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 560px) {
+    /* This means that the changes will be affected on the body of the screen if and only 
+    if the width does not exceed 56px */
+    body {
+      background-color: lightgreen;
+      position: relative;
+    }
+
+    .vectors{
+        display: flex;
+        flex-direction: column;
+    }
+  }

@@ -5,25 +5,17 @@
     /* font-size: 22px; */
 }
 
-@media screen and (max-width: 480px) {
-    /* This means that the changes will be affected on the body of the screen if and only 
-    if the width does not exceed 480px */
-    body {
-      background-color: lightgreen;
-    }
-  }
-
-.displaypage{
+.all-container{
     background-image: url("https://i.postimg.cc/9MQ2p89Y/hero-cover-3.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: scroll; */
+    background-attachment: fixed;
     position: relative;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; 
-    /* height: 900px; */
+    height: 100%;
     /* margin: 0 auto; */
     /* border: 2px solid black; */
 }
@@ -38,10 +30,11 @@
 }
 
 #name{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     color: white;
      padding: 10px;
+     /* margin-top: 20px; */
 }
 
 #nav, ul, #start{
@@ -50,7 +43,7 @@
     justify-content: space-evenly;
     font-size: calc(1vwh + 2.5rem);
     margin-top: 10px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 ul, li{
@@ -72,10 +65,10 @@ ul>li>a:hover{
     color: rgba(0, 35, 122, 0.7);
 }
 
-#start {
-    gap: 40px;
+#topright-btns {
+    margin-top: 20px;
 }
-#start button{
+#topright-btns button{
     font-weight: 900;
     color: white;
     font-size: 30px;
@@ -83,7 +76,7 @@ ul>li>a:hover{
     border: none;
 }
 
-#start>button:hover{
+#topright-btns>button:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     inset: 0 0 1px rgba(255, 255, 255, 0.6);
     background:  #23A6F0;
@@ -99,7 +92,7 @@ ul>li>a:hover{
     color: white;
 }
 
-#motto{
+#motto>p{
     font-size: 40px;
     color: white; 
     /* border: 2px solid black; */
@@ -107,12 +100,6 @@ ul>li>a:hover{
     text-align: center;
     /* margin-left: 69rem; */
     /* margin-right: 56rem; */
-}
-
-#motto>button{
-    color: white;
-    padding: 15px 32px;
-    border-radius: 20px;
 }
 
 #motto>button:hover{
@@ -124,28 +111,35 @@ ul>li>a:hover{
     font-size: 2rem;
     font-weight: 700;
     background-color: transparent;
+    /* background-color:#23A6F0; */
     color: #fff;
     border: 1px solid grey;
+    padding: 15px 32px;
+    border-radius: 20px;
 }
 
 .contain{
     text-align: center;
-    margin-top: 140px;
+    /* margin-top: 140px; */
     /* display: flex; */
-    /* flex-direction: row; */
+    /* flex-direction: column; */
     /* flex-basis: auto; */
     /* flex-wrap: wrap; */
     /* max-height: 700px; */
     /* grid-row: auto; */
     /* margin: 0 auto; */
+    /* border: 2px solid red; */
+    margin: 250px;
 }
 
-.service{
+.all-container>.service{
     display: flex;
     justify-content: center;
+    position: relative;
     /* justify-content: space-between; */
     /* gap: 160px; */
     /* margin-top: 1000px; */
+    margin-top: 70px;
 }
 
 #peace, #set, #satisfaction{
@@ -155,7 +149,7 @@ ul>li>a:hover{
     background-color: white;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     /* gap: 10px; */
 }
 
@@ -182,8 +176,29 @@ ul>li>a:hover{
     justify-content: center;
     /* justify-content: space-between; */
     gap: 160px;
-    border: 2px solid black;
+    padding: 50px;
+    /* border: 2px solid black; */
+    /* height :500px; */
+    font-size: 1em;
 }
+
+@media screen and (max-width: 560px) {
+    /* This means that the changes will be affected on the body of the screen if and only 
+        /* if the width does not exceed 560px  */
+        .service2{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* gap: 160px; */
+            padding: 50px;
+            border: 2px solid black;
+            /* height :500px; */
+            font-size: 1em;
+        }
+}
+
 
 #peace2, #set2, #satisfaction2{
     /* border: 2px solid black; */
@@ -192,8 +207,8 @@ ul>li>a:hover{
     background-color: white;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     /* gap: 10px; */
+    /* border: 2px solid black; */
 }
 
 .industry>h3{
@@ -203,17 +218,18 @@ ul>li>a:hover{
 
 .industry>p{
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .users{
     padding: 20px;
     display: flex;
-    justify-content: center;
-    gap: 90px;
+    justify-content: space-between;
+    /* gap: 90px; */
     text-align: center;
-    font-size: 24px;
-    border: 2px solid black;
+    font-size: 1rem;
+    /* border: 2px solid black; */
+    /* max-height: 500px; */
 }
 
 @media screen and(max-width:500px){
@@ -234,12 +250,27 @@ ul>li>a:hover{
 
 #user1, #user2, #user3{
     border: 1px solid gray;
-    box-shadow: gray;
+    /* border-bottom: 55px; */
+    /* height: 400px; */
+    /* box-shadow: gray; */
     padding: 20px;
+    /* justify-content: space-around; */
+    justify-content: space-between;
 }
 
 .vectors{
-    justify-content: space-around;
+    justify-content: center;
+    margin: 40px;
+    border: 2px solid black;
+}
+
+.vectors>ul>li{
+    /* justify-content: space-around; */
+    /* gap: none; */
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 10px;
+    gap: 40px;
 }
 
 .sub{
@@ -275,15 +306,42 @@ ul>li>a:hover{
     font-size: 28px;
     /* border: 2px solid black; */
     margin: 40px;
+    background-color: #fafafa;
 }
 
 #pricing{
     justify-content: center;
     display: flex;
-    gap: 1px;
+    /* gap: 1px; */
     text-align: center;
     padding: 10px;
     font-size: 28px;
+    background-color: #fafafa;
+}
+
+#standard{
+    background-color: #252b42;
+}
+
+#free, #premium{
+    background-color: #fff;
+}
+
+#specs{
+    text-align: left;
+}
+
+#price-btn{
+    text-align: center;
+}
+
+#price-btn>button{
+    background-color: #23a6f0;
+    padding: 15px 32px;
+    /* padding: auto; */
+    font-size: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 price{
@@ -338,10 +396,27 @@ font-size: 2rem;
 
 #bookapp{
     float: right;
-    font-size: 35px;
-    margin: 0px;
-    gap: 0px;
+    /* background-color: #23a6f0; */
+    padding: 15px 32px;
+    /* padding: auto; */
+    font-size: 29px;
+    /* color: #fff; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 35px; */
+    /* margin: 0px; */
+    /* gap: 0px; */
     /* text-align: center; */
+}
+
+#bookapp>#bkbtn{
+        /* font-size: 2rem; */
+        font-weight: 700;
+        /* background-color: transparent; */
+        background-color:#23A6F0;
+        color: #fff;
+        /* border: 1px solid grey; */
+        padding: 15px 32px;
+        /* border-radius: 20px; */
 }
 
 .consult{
@@ -349,11 +424,20 @@ font-size: 2rem;
     justify-content: space-between;
     font-size: 24px;
     background-color: #fafafa;
+    margin: 40px;
 }
 
-#consultbtn{
-    margin-top: 20px;
+.consult> #consultbtn{
+    /* margin-top: 20px; */
     /* padding: auto; */
+    /* font-size: 2rem; */
+    /* font-weight: 700; */
+    /* background-color: transparent; */
+    background-color:#23A6F0;
+    color: #fff;
+    /* border: 1px solid grey; */
+    padding: 15px 32px;
+    /* border-radius: 20px; */
 }
 
 .info{

@@ -22,11 +22,6 @@
 }
 
 @media screen and (max-width:560px){
-    .all-container{
-        object-fit:contain;
-        /* height: 100vh; */
-        /* width: 100vw; */
-    }
 }
 
 #name{
@@ -74,7 +69,7 @@ ul>li>a:hover{
     font-size: 3vw 3vh;
     text-align: center;
     
-}
+} 
 #topright-btns button{
     font-weight: 900;
     color: white;
@@ -96,13 +91,13 @@ ul>li>a:hover{
 }
 
 .slogan{
-    font-size: 7vh;
+    font-size: 6vh;
     font-weight: 900;
     color: white;
 }
 
 #motto>p{
-    font-size: 5vh;
+    font-size: 4vh;
     color: white; 
     text-align: center;
 }
@@ -138,7 +133,7 @@ ul>li>a:hover{
     /* grid-row: auto; */
     /* margin: 0 auto; */
     /* border: 2px solid red; */
-    /* margin: 300px;  */
+    margin-top: 350px; 
     /* position: relative; */
 }
 
@@ -367,6 +362,10 @@ price{
 h5{
     font-size: 900;
     font-size: 2rem;
+}
+
+#ctcover{
+margin-top: -10px;
 }
 
 .branches>img{
